@@ -6,9 +6,8 @@ python ：`numpy tqdm`
 
 注意：
 
-1. 如有问题前往QQ群（849776886）提问
-2. 完整流程可以直接运行子文件夹下的`ipynb`
-3. 国内注意PIP换源，命令为：`pip config set global.index-url https://mirrors.bfsu.edu.cn/pypi/web/simple`
+1. 完整流程可以直接运行子文件夹下的`ipynb`
+2. 国内注意PIP换源，命令为：`pip config set global.index-url https://mirrors.bfsu.edu.cn/pypi/web/simple`
 
 ## 数据准备（UAV-human骨架数据预处理）
 
@@ -19,10 +18,11 @@ python ：`numpy tqdm`
 **多线程处理**：在以下提到的命令中，添加`--use_mp True`即可。
 
 ### 流程
-1. 数据集处理出bone模态数据（可选）：运行`python gen_modal.py --modal bone`得到bone模态数据
-2. 数据集处理出motion模态数据（可选）：运行`python gen_modal.py --modal motion`得到motion模态的数据
-3. bone模态与joint模态合并（可选）：运行`python gen_modal.py --modal jmb`得到合并模态的数据
-4. 最终你会得到如下所展示的目录结构与文件
+1. 将省赛数据集解压放入data文件夹下，修改名称为test_B_joint.npy
+2. 数据集处理出bone模态数据：运行`python gen_modal.py --modal bone`得到bone模态数据
+3. 数据集处理出motion模态数据：运行`python gen_modal.py --modal motion`得到motion模态的数据
+4. 运行zero.py文件得到（4599，）的全零标签
+5. 最终你会得到如下所展示的目录结构与文件
 ```
 └─data
     ├── train_label.npy
@@ -36,4 +36,6 @@ python ：`numpy tqdm`
     ├── test_*_joint_bone.npy
     ├── test_*_joint_motion.npy
     ├── test_*_joint.npy
+..........
+    ├── zero_label_B.npy
 ```
