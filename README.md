@@ -6,11 +6,22 @@ Prepare the data according to [https://github.com/CRS-13/quminghaonan/tree/4b5ec
 
 Your `data/` should be like this:
 ```
-uav
-___ data
-    ___ test_data.npy
-    ___ test_label.pkl
-    ___ train_data.npy
+dataset
+└─data
+    ├── train_label.npy
+    ├── train_bone_motion.npy
+    ├── train_bone.npy
+    ├── train_joint_bone.npy
+    ├── train_joint_motion.npy
+    ├── train_joint.npy
+    ├── test_*_bone_motion.npy
+    ├── test_*_bone.npy
+    ├── test_*_joint_bone.npy
+    ├── test_*_joint_motion.npy
+    ├── test_*_joint.npy
+    ├── ..........
+    ├── zero_label_B.npy
+└─eval
 
 ```
 
