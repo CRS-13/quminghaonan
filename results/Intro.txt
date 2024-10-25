@@ -1,0 +1,2 @@
+1、results文件夹中包含了我们所以权重，和预测结果的置信度。里面的train文件夹下的为权重，test文件夹下为使用权重对测试集B进行预测的结果。
+2、Top仓库的MixGCN所需要的2dpose转换为3dpose的文件在addtional_file文件夹下。

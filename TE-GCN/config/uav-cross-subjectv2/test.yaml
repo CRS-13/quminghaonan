@@ -1,0 +1,26 @@
+# feeder
+feeder: feeders.feeder.Feeder
+test_feeder_args:
+  # data_path: /home/zjl_laoshi/xiaoke/dataset_xiaoke/data/test_A_bone_motion.npy #train
+  # label_path: /home/zjl_laoshi/xiaoke/dataset_xiaoke/data/test_A_label.npy #train
+  data_path: /home/zjl_laoshi/xiaoke/dataset_xiaoke/data/test_B_bone_motion.npy #test
+  label_path: /home/zjl_laoshi/xiaoke/dataset_xiaoke/data/zero_label_B.npy #test
+  debug: False
+
+# model
+model: model.tegcn.Model
+model_args:
+  num_class: 155
+  num_point: 17
+  num_person: 2
+  graph: graph.uav.Graph
+  graph_args:
+    labeling_mode: 'spatial'
+
+# test
+phase: test
+device: 0
+test_batch_size: 256
+weights: /home/zjl_laoshi/xiaoke/TE-GCN/result/gcnjoint_47_72.2/2102-47-14064.pt
+
+save_score: True
