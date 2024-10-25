@@ -2,6 +2,14 @@
 这是我们的比赛代码，所有的训练权重全部保存在百度网盘
 [baidupan]([ https://pan.baidu.com/s/1ZG5e7c7tLNYy4-57Tl4dPg?pwd=szuq]), passwd is `szuq`
 
+# Install
+执行下面命令：
+```
+conda env create -f GCN.yml
+conda env create -f 3dpose.yml
+```
+在转换3dpose时需要使用3dpose的环境，在训练模型时如果缺少包，直接pip install 即可
+
 # TEGCN
 
 ## Data preparation
