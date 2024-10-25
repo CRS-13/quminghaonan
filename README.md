@@ -1,6 +1,6 @@
 # 取名好难
 这是我们的比赛代码，所有的训练权重全部保存在百度网盘
-[baidupan]([https://pan.baidu.com/s/1kourPFzEChrjc8kPO0y6rw](https://pan.baidu.com/s/1ZG5e7c7tLNYy4-57Tl4dPg?pwd=szuq)),passwd is `szuq`
+[baidupan]([ https://pan.baidu.com/s/1ZG5e7c7tLNYy4-57Tl4dPg?pwd=szuq]), passwd is `szuq`
 
 # TEGCN
 
@@ -43,7 +43,7 @@ sh scripts/EVAL_V2.sh
 注：进行测试的时候需要修改测试结果保存路径，分别保存四个不同模型的测试结果。
 
 ## WEIGHTS
-We have released all trained weights in [baidupan]([https://pan.baidu.com/s/1kourPFzEChrjc8kPO0y6rw](https://pan.baidu.com/s/1ZG5e7c7tLNYy4-57Tl4dPg?pwd=szuq)),passwd is `szuq`
+We have released all trained weights in [baidupan]([ https://pan.baidu.com/s/1ZG5e7c7tLNYy4-57Tl4dPg?pwd=szuq]), passwd is `szuq`
 
 # Top
 它包含MixFormer和MixGCN
