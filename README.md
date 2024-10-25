@@ -2,7 +2,7 @@
 这是我们的比赛文件
 
 ## Data preparation
-Prepare the data according to [UAVHuman-Pose processing](https://github.com/xieyulai/UAVHuman_For_TE-GCN)
+Prepare the data according to dataset/dataset/read me.md
 
 Your `data/` should be like this:
 ```
