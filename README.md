@@ -1,5 +1,5 @@
 # 取名好难
-这是我们的比赛代码，所有的训练权重全部保存在百度网盘
+这是我们的比赛代码，所有的训练权重全部保存在百度网盘,同时也在该项目的results目录下，同时还包含我们得到3dpose数据所用的附加文件
 [baidupan]([ https://pan.baidu.com/s/1ZG5e7c7tLNYy4-57Tl4dPg?pwd=szuq]), passwd is `szuq`
 
 # Install
