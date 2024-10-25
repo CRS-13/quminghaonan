@@ -1,5 +1,6 @@
 # 取名好难
-这是我们的比赛文件
+这是我们的比赛代码，所有的训练权重全部保存在百度网盘
+[baidupan]([https://pan.baidu.com/s/1kourPFzEChrjc8kPO0y6rw](https://pan.baidu.com/s/1ZG5e7c7tLNYy4-57Tl4dPg?pwd=szuq)),passwd is `szuq`
 
 # TEGCN
 
