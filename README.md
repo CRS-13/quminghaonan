@@ -5,6 +5,7 @@
 # Install
 执行下面命令：
 ```
+cd Top
 conda env create -f GCN.yml
 conda env create -f 3dpose.yml
 ```
