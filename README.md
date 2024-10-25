@@ -1,6 +1,8 @@
 # 取名好难
 这是我们的比赛文件
 
+# TEGCN
+
 ## Data preparation
 Prepare the data according to [https://github.com/CRS-13/quminghaonan/tree/4b5ec6abda2bc838f77200ff7f5e8a058286c46c/dataset/dataset].
 
