@@ -112,16 +112,16 @@ ctrgcn_V1_J、ctrgcn_V1_B、ctrgcn_V1_J_3D、ctrgcn_V1_B_3D、tdgcn_V1_J、tdgcn
 注：在测试之前，需要将test的data_path改为的npz文件，注意joint与joint对应，bone与bone对应
 在测试3dpose数据时，需要取消注释main.py文件中的446行代码， `label = label.unsqueeze(1)`
 ```
-python main.py --config ./config/ctrgcn_V1_J.yaml --phase test --save-score True --weights ./your_pt_path/ctrgcn_V1_J.pt --device 0
-python main.py --config ./config/ctrgcn_V1_B.yaml --phase test --save-score True --weights ./your_pt_path/ctrgcn_V1_B.pt --device 0
-python main.py --config ./config/ctrgcn_V1_J_3d.yaml --phase test --save-score True --weights ./your_pt_path/ctrgcn_V1_J_3d.pt --device 0
-python main.py --config ./config/ctrgcn_V1_B_3d.yaml --phase test --save-score True --weights ./your_pt_path/ctrgcn_V1_B_3d.pt --device 0
+python main.py --config ./config/ctrgcn_V1_J.yaml --phase test --save-score True --weights ./your_pt_path/pt_name.pt --device 0
+python main.py --config ./config/ctrgcn_V1_B.yaml --phase test --save-score True --weights ./your_pt_path/pt_name.pt --device 0
+python main.py --config ./config/ctrgcn_V1_J_3d.yaml --phase test --save-score True --weights ./your_pt_path/pt_name.pt --device 0
+python main.py --config ./config/ctrgcn_V1_B_3d.yaml --phase test --save-score True --weights ./your_pt_path/pt_name.pt --device 0
 ###
-python main.py --config ./config/tdgcn_V1_J.yaml --phase test --save-score True --weights ./your_pt_path/tdgcn_V1_J.pt --device 0
-python main.py --config ./config/tdgcn_V1_B.yaml --phase test --save-score True --weights ./your_pt_path/tdgcn_V1_B.pt --device 0
+python main.py --config ./config/tdgcn_V1_J.yaml --phase test --save-score True --weights ./your_pt_path/pt_name.pt --device 0
+python main.py --config ./config/tdgcn_V1_B.yaml --phase test --save-score True --weights ./your_pt_path/pt_name.pt --device 0
 ###
-python main.py --config ./config/mstgcn_V1_J.yaml --phase test --save-score True --weights ./your_pt_path/mstgcn_V1_J.pt --device 0
-python main.py --config ./config/mstgcn_V1_B.yaml --phase test --save-score True --weights ./your_pt_path/mstgcn_V1_B.pt --device 0
+python main.py --config ./config/mstgcn_V1_J.yaml --phase test --save-score True --weights ./your_pt_path/pt_name.pt --device 0
+python main.py --config ./config/mstgcn_V1_B.yaml --phase test --save-score True --weights ./your_pt_path/pt_name.pt --device 0
 ```
 
 ## Run Mix_Former
@@ -134,12 +134,12 @@ cd ./Model_inference/Mix_Former
 You have to change the corresponding **data-path** in the **config file**, just like：**data_path: dataset/save_2d_pose/V1.npz**. we recommend using an absolute path.
 注：与MixGCN一样需要检查数据路径，test参数的data_path训练时使用A，测试时使用B
 ```
-python main.py --config ./config/mixformer_V1_J.yaml --phase test --save-score True --weights ./your_pt_path/mixformer_V1_J.pt --device 0  
-python main.py --config ./config/mixformer_V1_B.yaml --phase test --save-score True --weights ./your_pt_path/mixformer_V1_B.pt --device 0 
-python main.py --config ./config/mixformer_V1_JM.yaml --phase test --save-score True --weights ./your_pt_path/mixformer_V1_JM.pt --device 0 
-python main.py --config ./config/mixformer_V1_BM.yaml --phase test --save-score True --weights ./your_pt_path/mixformer_V1_BM.pt --device 0 
-python main.py --config ./config/mixformer_V1_k2.yaml --phase test --save-score True --weights ./your_pt_path/mixformer_V1_k2.pt --device 0 
-python main.py --config ./config/mixformer_V1_k2M.yaml --phase test --save-score True --weights ./your_pt_path/mixformer_V1_k2M.pt --device 0 
+python main.py --config ./config/mixformer_V1_J.yaml --phase test --save-score True --weights ./your_pt_path/pt_name.pt --device 0  
+python main.py --config ./config/mixformer_V1_B.yaml --phase test --save-score True --weights ./your_pt_path/pt_name.pt --device 0 
+python main.py --config ./config/mixformer_V1_JM.yaml --phase test --save-score True --weights ./your_pt_path/pt_name.pt --device 0 
+python main.py --config ./config/mixformer_V1_BM.yaml --phase test --save-score True --weights ./your_pt_path/pt_name.pt --device 0 
+python main.py --config ./config/mixformer_V1_k2.yaml --phase test --save-score True --weights ./your_pt_path/pt_name.pt --device 0 
+python main.py --config ./config/mixformer_V1_k2M.yaml --phase test --save-score True --weights ./your_pt_path/pt_name.pt --device 0 
 ```
 
 # Ensemble
