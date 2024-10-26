@@ -9,7 +9,9 @@ cd Top
 conda env create -f GCN.yml
 conda env create -f 3dpose.yml
 ```
-在转换3dpose时需要使用3dpose的环境，在训练模型时如果缺少包，直接pip install 即可
+在转换3dpose时需要使用3dpose的环境，
+TEGCN和Top的训练均使用GCN环境，在训练模型时如果缺少包，直接pip install 即可
+
 
 # TEGCN
 
