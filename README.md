@@ -82,6 +82,12 @@ python estimate.py --test_dataset_path ../Test_dataset
 
 # Model training
 注：注意修改配置文件的数据路径，训练joint时使用joint的npz文件，在save_2d_pose文件夹下，3dpose在save_3d_pose下,test参数的data_path训练时使用A，测试时使用B
+安装包
+```
+cd ./Model_inference/Mix_GCN
+pip install -e torchlight
+```
+
 ```
 # Change the configuration file (.yaml) of the corresponding modality.
 # Mix_GCN Example
@@ -97,11 +103,6 @@ ctrgcn_V1_J、ctrgcn_V1_B、ctrgcn_V1_J_3D、ctrgcn_V1_B_3D、tdgcn_V1_J、tdgcn
 
 # Model inference
 ## Run Mix_GCN
-
-```
-cd ./Model_inference/Mix_GCN
-pip install -e torchlight
-```
 
 **1. Run the following code separately to obtain classification scores using different model weights.** <br />
 **test:**
