@@ -143,7 +143,7 @@ python main.py --config ./config/mixformer_V1_k2M.yaml --phase test --save-score
 **1.** You can obtain the final classification accuracy of CSv1 by running the following code:
 ```
 python Ensemble_B.py
-注意：在运行上述指令前，需要该修改文件中的路径,并按默认值的顺序更改new_test_r1_Score到new_test_r18_Score
+注意：在运行上述指令前，需要该修改文件中的路径,并按默认值对应的结果依次更改new_test_r1_Score到new_test_r18_Score
 
 当然，我们的网盘中提供了我们的结果，在融合我们的结果前也需要修改成对应的路径
 
@@ -151,10 +151,4 @@ python Ensemble_B.py
 如果复现过程中存在问题，可以通过QQ或者邮件联系我们，谢谢！
 QQ：3091166956
 email:3091166956@qq.com
-
-
-
-
-
-
 
