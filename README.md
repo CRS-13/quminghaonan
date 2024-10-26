@@ -11,12 +11,14 @@ conda env create -f 3dpose.yml
 ```
 在转换3dpose时需要使用3dpose的环境，
 TEGCN和Top的训练均使用GCN环境，在训练模型时如果缺少包，直接pip install 即可
+使用GCN运行代码时可能出现` File "/home/zjl_laoshi/anaconda3/envs/mixgcn_test/lib/python3.10/site-packages/torchpack/config.py", line 4, in <module>`
+将`from collections import Iterable`修改为`from collections.abc import Iterable`即可
 
 
 # TEGCN
 
 ## Data preparation
-Prepare the data according to [https://github.com/CRS-13/quminghaonan/tree/4b5ec6abda2bc838f77200ff7f5e8a058286c46c/dataset/dataset].
+Prepare the data according to [https://github.com/CRS-13/quminghaonan/blob/577ce2e663f4cb7ff56bdc53603329d54edff5ea/dataset/README.md].
 
 Your `dataset/` should be like this:
 ```
@@ -107,7 +109,7 @@ ctrgcn_V1_J、ctrgcn_V1_B、ctrgcn_V1_J_3D、ctrgcn_V1_B_3D、tdgcn_V1_J、tdgcn
 **1. Run the following code separately to obtain classification scores using different model weights.** <br />
 **test:**
 注：在测试之前，需要将test的data_path改为的npz文件，注意joint与joint对应，bone与bone对应
-在测试3dpose数据时，需要取消注释main.py文件中的446行代码， label = label.unsqueeze(1)
+在测试3dpose数据时，需要取消注释main.py文件中的446行代码， `label = label.unsqueeze(1)`
 ```
 python main.py --config ./config/ctrgcn_V1_J.yaml --phase test --save-score True --weights ./your_pt_path/ctrgcn_V1_J.pt --device 0
 python main.py --config ./config/ctrgcn_V1_B.yaml --phase test --save-score True --weights ./your_pt_path/ctrgcn_V1_B.pt --device 0
