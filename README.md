@@ -18,7 +18,7 @@ TEGCN和Top的训练均使用GCN环境，在训练模型时如果缺少包，直
 ## Data preparation
 Prepare the data according to [https://github.com/CRS-13/quminghaonan/tree/4b5ec6abda2bc838f77200ff7f5e8a058286c46c/dataset/dataset].
 
-Your `data/` should be like this:
+Your `dataset/` should be like this:
 ```
 dataset
 └─data
