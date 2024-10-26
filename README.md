@@ -105,6 +105,7 @@ pip install -e torchlight
 **1. Run the following code separately to obtain classification scores using different model weights.** <br />
 **test:**
 注：在测试之前，需要将test的data_path改为的npz文件，注意joint与joint对应，bone与bone对应
+在测试3dpose数据时，需要取消main.py文件中的446行代码， label = label.unsqueeze(1)
 ```
 python main.py --config ./config/ctrgcn_V1_J.yaml --phase test --save-score True --weights ./your_pt_path/ctrgcn_V1_J.pt --device 0
 python main.py --config ./config/ctrgcn_V1_B.yaml --phase test --save-score True --weights ./your_pt_path/ctrgcn_V1_B.pt --device 0
