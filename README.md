@@ -84,6 +84,7 @@ python estimate.py --test_dataset_path ../Test_dataset
 
 # Model training
 注：注意修改配置文件的数据路径，训练joint时使用joint的npz文件，在save_2d_pose文件夹下，3dpose在save_3d_pose下,test参数的data_path训练时使用A，测试时使用B
+
 安装包
 ```
 cd ./Model_inference/Mix_GCN
