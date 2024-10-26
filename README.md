@@ -72,7 +72,7 @@ python npy_to_npz.py
 ```
 
 **2. 得到3dpose数据
-First, you must download the 3d pose checkpoint from [here](https://drive.google.com/file/d/1citX7YlwaM3VYBYOzidXSLHb4lJ6VlXL/view?usp=sharing), and install the environment based on **pose3d.yml** <br />
+First, you must download the 3d pose checkpoint from [here](https://drive.google.com/file/d/1citX7YlwaM3VYBYOzidXSLHb4lJ6VlXL/view?usp=sharing), and install the environment based on **3dpose.yml** <br />
 Then, you must put the downloaded checkpoint into the **./Process_data/checkpoint/pose3d/FT_MB_lite_MB_ft_h36m_global_lite** folder. <br />
 你也可以在我们的网盘下载该文件，并放在上述指定的文件夹下
 最后，你需要改变test_dataset_path和保存路径，得到joint和bone的3dpose数据
