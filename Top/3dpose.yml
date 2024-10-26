@@ -1,4 +1,4 @@
-name: pose3d
+name: 3dpose
 channels:
   - pytorch
   - nvidia
