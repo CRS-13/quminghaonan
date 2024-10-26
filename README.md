@@ -1,6 +1,6 @@
 # 取名好难
 这是我们的比赛代码，所有的训练权重全部保存在百度网盘,同时也在该项目的results目录下，同时还包含我们得到3dpose数据所用的附加文件
-[baidupan]([ https://pan.baidu.com/s/1ZG5e7c7tLNYy4-57Tl4dPg?pwd=szuq]), passwd is `szuq`
+[baidupan]([  https://pan.baidu.com/s/1VbG1YBjgt4E7NjXl3OFcDg?pwd=ripy]), passwd is `ripy`
 
 # Install
 执行下面命令：
@@ -58,7 +58,7 @@ sh scripts/EVAL_V2.sh
 注意修改权重地址
 
 ## WEIGHTS
-We have released all trained weights in [baidupan]([ https://pan.baidu.com/s/1ZG5e7c7tLNYy4-57Tl4dPg?pwd=szuq]), passwd is `szuq`
+We have released all trained weights in [baidupan]([  https://pan.baidu.com/s/1VbG1YBjgt4E7NjXl3OFcDg?pwd=ripy]), passwd is `szuq`
 
 # Top
 它包含MixFormer和MixGCN
