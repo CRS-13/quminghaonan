@@ -64,7 +64,7 @@ We have released all trained weights in [baidupan]([ https://pan.baidu.com/s/1ZG
 它包含MixFormer和MixGCN
 
 ## Dataset
-**1. 进入Top/Process_data，修改npy_to_npz.py代码中的路径,使处理后的数据保存在Top/Test_dataset/save_2d_pose
+**1. 进入Top/Process_data，修改npy_to_npz.py代码中的路径,使处理后的数据保存在Top/Test_dataset/save_2d_pose，该文件夹需要自己创建，同时创建Top/Test_dataset/save_3d_pose
 ```
 python npy_to_npz.py
 ```
