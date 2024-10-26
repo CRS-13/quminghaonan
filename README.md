@@ -55,6 +55,7 @@ You can test the your model using the scripts:
 sh scripts/EVAL_V2.sh
 ```
 注：进行测试的时候需要修改测试结果保存路径，分别保存四个不同模型的测试结果。
+注意修改权重地址
 
 ## WEIGHTS
 We have released all trained weights in [baidupan]([ https://pan.baidu.com/s/1ZG5e7c7tLNYy4-57Tl4dPg?pwd=szuq]), passwd is `szuq`
