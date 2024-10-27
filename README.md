@@ -173,7 +173,7 @@ python main.py --config ./config/mixformer_V1_k2M.yaml --phase test --save-score
 cd UAV-SAR
 ## Dependencies
 * python == 3.8
-* pytorch == 1.1.3
+* pytorch == 1.13.0
 * NVIDIA apex
 * PyYAML, tqdm, tensorboardX, wandb, numba
 
